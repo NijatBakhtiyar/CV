@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+header {
+  min-height: 200px;
+}
+
+header section {
+  position: relative;
+  text-align: center;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name h1 {
+  max-width: fit-content;
+  border: 2px solid #ffa500;
+  padding: 20px;
+  font-size: 32px;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.name span {
+  color: #ffa500;
+  font-weight: 500;
+}
+
+.position {
+  background: #f2f2f2;
+  padding: 50px 0 20px;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+}
+
+.position h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+section.left {
+  flex: 1;
+}
+
+section h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  /* margin-bottom: 5px; */
+}
+
+section
+  :is(.contact, .education, .skills, .summary, .sertificaties, .experience) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+section.left .contact a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+section.left .contact a i {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+section.left .education {
+  text-align: end;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+section.left .education div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section.left .education h4 {
+  max-width: 190px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+
+section.left .education span {
+  color: #000;
+  opacity: 0.6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+section.left .skills {
+  font-family: "Montserrat", sans-serif;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+section.left .skills p {
+  text-transform: lowercase;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section.left .summary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+section.left .summary p {
+  font-size: 16px;
+  text-align: end;
+}
+
+.border {
+  width: 2px;
+  background: #ffa500;
+}
+
+section.right {
+  flex: 2.2;
+}
+
+section.right h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+section.right :is(.sertificaties, .experience) {
+  text-align: left;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+section.right :is(.sertificaties, .experience) ul {
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+section.right .experience div {
+  margin: 0 0 5px;
+}
+
+section.right :is(.sertificaties, .experience) a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  opacity: 0.6;
+}
+
+section.right .experience p {
+  font-family: "Montserrat", sans-serif;
+  max-width: 500px;
+  margin: 5px 0;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section.right .experience .project {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 4px;
+}
+
+section.right .experience .project p {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+}
+
+section.right .experience .links {
+  display: flex;
+  gap: 20px;
+}
