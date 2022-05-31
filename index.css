@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 .container {
@@ -88,7 +89,7 @@ section.left .contact a {
   gap: 5px;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -182,7 +183,7 @@ section.right :is(.sertificaties, .experience) ul {
   gap: 5px;
 }
 
-section.right .experience div {
+section.right .experience div:not(:last-child) {
   margin: 0 0 5px;
 }
 
@@ -196,12 +197,20 @@ section.right :is(.sertificaties, .experience) a {
   opacity: 0.6;
 }
 
+section.right .experience .company:nth-child(2) {
+  margin-top: 10px !important;
+}
+
+section.right .experience .company {
+  margin-bottom: 10px !important;
+}
+
 section.right .experience p {
   font-family: "Montserrat", sans-serif;
   max-width: 500px;
   margin: 5px 0;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -209,12 +218,12 @@ section.right .experience .project {
   display: flex;
   flex-direction: column;
   font-weight: 500;
-  gap: 4px;
 }
 
 section.right .experience .project p {
   font-family: "Rubik", sans-serif;
   font-size: 15px;
+  margin: 0;
 }
 
 section.right .experience .links {
